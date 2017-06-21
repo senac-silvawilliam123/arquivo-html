@@ -1,0 +1,25 @@
+CREATE DATABASE if not exists avaliacao;
+use avaliacao;
+create table if not EXISTS funcionario(
+    codfun tinyint not null primary key,
+    nome varchar (40) not null,
+    departamento varchar (2) not null,
+    funcao varchar (20) not null,
+    salario decimal(10,2) not null);
+
+
+
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(1,'CELIA NASCIMENTO','2','SECRETARIA',1200.50);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(3,'ANA BASTOS','5','VENDEDOR',1530.00);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(4,'CARLOS BASTOS','5','VENDEDOR',1530.00);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(6,'MARCELO SILVA','3','ANALISTA',2250.11);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(9,'SOLANGE PACHECO','5','SUPERVISOR',1599.51);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(10,'PAULO DA SILVA','2','VENDEDOR',1530.00);
+INSERT INTO funcionario(codfun,Nome,Departamento,Funcao,Salario)
+VALUES(25,'PEDRO SILVA','3','SUPERVISOR',1599.51)
